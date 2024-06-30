@@ -19,3 +19,12 @@ curl --location 'http://localhost:8080/hotel/occupancy' \
     }
 ]'
 ```
+
+TODO:
+
+1)Controller-level validations
+2)Business logic level validations
+3)Unit tests for everything :)
+4)Separate integration tests layer from unit tests layer
+5)Add abstraction to run the chain of bookers instead of using a loop and having it autowired with @Qualifier("baseHotelChain") -
+ mechanism to get booker chain for specific hotel
